@@ -1,0 +1,18 @@
+.layout {
+  height: 100vh;
+  position: relative;
+
+  h1 {
+    font-size: 3rem;
+  }
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-around;
+
+  .card {
+    max-width: 30rem;
+    text-align: center;
+  }
+}

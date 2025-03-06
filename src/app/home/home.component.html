@@ -1,0 +1,24 @@
+<section class="layout flex flex-col justify-center">
+  <h1 class="text-center mb-10">RUN APP</h1>
+  
+  <section class="navigation">
+    <div class="card">
+      <div class="card-image">
+        <img src="/assets/images/users.webp">
+      </div>
+      <div>
+        <button mat-flat-button (click)="goTo('users')">Usuarios</button>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-image">
+        <img src="/assets/images/trainings.webp">
+      </div>
+      <div>
+        <button mat-flat-button (click)="goTo('trainings')">Entrenamientos</button>
+      </div>
+    </div>
+  </section>
+
+  <app-logout-button />
+</section>
