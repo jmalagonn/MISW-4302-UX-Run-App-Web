@@ -1,10 +1,11 @@
+import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
 import { MatButton } from '@angular/material/button';
 import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-logout-button',
-  imports: [MatButton],
+  imports: [CommonModule, MatButton],
   templateUrl: './logout-button.component.html',
   styleUrl: './logout-button.component.scss'
 })
