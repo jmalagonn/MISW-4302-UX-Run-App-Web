@@ -28,10 +28,11 @@ body {
   margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; 
   position: relative;
   background: url('/assets/images/background.jpg') no-repeat center bottom / cover;
+  background-attachment: fixed;
 }
 body::before {
   content: "";
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;

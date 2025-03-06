@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { MatButton } from '@angular/material/button';
 import { Router } from '@angular/router';
 
@@ -11,7 +11,9 @@ import { Router } from '@angular/router';
 export class LogoutButtonComponent {
   constructor (private router: Router) {}
 
-  handleLogout() {
-    this.router.navigateByUrl('login');
+  @Input() showHomeButton: boolean = false;
+
+  goTo(path: string) {
+    this.router.navigateByUrl(path);
   }
 }

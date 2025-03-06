@@ -1,1 +1,4 @@
-<button mat-flat-button (click)="handleLogout()">Cerrar sesión</button>
+<div class="flex gap-4">
+  <button *ngIf="showHomeButton" mat-flat-button (click)="goTo('home')">Home</button>
+  <button mat-flat-button (click)="goTo('login')">Cerrar sesión</button>
+</div>
