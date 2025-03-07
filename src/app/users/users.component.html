@@ -2,17 +2,10 @@
 
 <div class="container m-auto">
   <div class="card-container flex flex-wrap pb-3">
-    <div class="w-1/3">
-      <app-card />
-    </div>
-    <div class="w-1/3">
-      <app-card />
-    </div>
-    <div class="w-1/3">
-      <app-card />
-    </div>
-    <div class="w-1/3">
-      <app-card />
+    <div *ngFor="let user of users" class="w-1/3">
+      <app-card [cardInfo]="user" (viewMoreEvent)="showDetails($event)">
+        <p>{{ user.description }}</p>
+      </app-card>
     </div>
   </div>
 </div>

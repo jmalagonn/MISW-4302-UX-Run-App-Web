@@ -2,17 +2,9 @@
 
 <div class="container m-auto">
   <div class="card-container flex flex-wrap pb-3">
-    <div class="w-1/3">
-      <app-card />
-    </div>
-    <div class="w-1/3">
-      <app-card />
-    </div>
-    <div class="w-1/3">
-      <app-card />
-    </div>
-    <div class="w-1/3">
-      <app-card />
+    <div *ngFor="let training of trainings" class="w-1/3">
+      <app-card [cardInfo]="training" (viewMoreEvent)="showDetails($event)">
+      </app-card>
     </div>
   </div>
 </div>
