@@ -5,10 +5,11 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIcon } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { Card } from '../../Core/models/card.model';
+import { PhaseComponent } from "../phase/phase.component";
 
 @Component({
   selector: 'app-trainings-dialog',
-  imports: [MatDialogModule, MatFormFieldModule, MatInputModule, MatButtonModule, MatIcon],
+  imports: [MatDialogModule, MatFormFieldModule, MatInputModule, MatButtonModule, MatIcon, PhaseComponent],
   templateUrl: './trainings-dialog.component.html',
   styleUrl: './trainings-dialog.component.scss'
 })

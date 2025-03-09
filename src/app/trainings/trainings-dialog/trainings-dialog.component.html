@@ -1,28 +1,14 @@
-<h2 mat-dialog-title>{{data.training.title}}</h2>
+<h2 mat-dialog-title class="text-center">{{data.training.title}}</h2>
 <mat-dialog-content>
   <div>
     <img [src]="data.training.imageUrl" />
   </div>
-  <form class="mt-5 flex flex-col gap-4">
-    <mat-form-field appearance="outline">
-      <mat-label>Nombre</mat-label>
-      <input matInput type="text" placeholder="Nombre" [value]="data.training.title" />
-      <mat-hint>Ingrese su nombre</mat-hint>
-    </mat-form-field>
-    <mat-form-field appearance="outline">
-      <mat-label>Email</mat-label>
-      <input matInput type="Email" placeholder="Email" [value]="data.training.description" />
-      <mat-hint>Ingrese su email</mat-hint>
-    </mat-form-field>
-  </form>
+  <div class="my-4 text-center">
+    <button mat-flat-button>
+      <mat-icon>add</mat-icon>
+      Agregar fase
+    </button>
+  </div>
+  <app-phase />  
+  <app-phase />  
 </mat-dialog-content>
-<mat-dialog-actions>
-  <button mat-flat-button (click)="onNoClick()">
-    <mat-icon>delete</mat-icon>
-    Eliminar
-  </button>
-  <button mat-flat-button (click)="onNoClick()">
-    <mat-icon>save</mat-icon>  
-    Guardar
-  </button>
-</mat-dialog-actions>
